@@ -1,13 +1,11 @@
-import React from 'react';
-import Header from '../../Header/Header';
+import React from "react";
 
 const Service = () => {
-    return (
-        <div>
-            <Header />
-            <h1>this is service page</h1>
-        </div>
-    );
+  return (
+    <div>
+      <h1>this is service page</h1>
+    </div>
+  );
 };
 
 export default Service;
