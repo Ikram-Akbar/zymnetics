@@ -1,10 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Friend = ({ friend }) => {
-  const { name, username, email } = friend;
+  const { id, name, username, email } = friend;
   return (
     <div>
-      <h4>name : {name} </h4>
+      <h4>Name : {name} </h4>
+      <p>Email: {email} </p>
+      <p>
+        <Link to={`/friend/${id}`}>{username}</Link>
+      </p>
     </div>
   );
 };
